@@ -1,0 +1,14 @@
+
+-include $(TOPDIR)/Make.defs
+-include $(SDKDIR)/Make.defs
+
+PROGNAME = $(CONFIG_MYAPPS_HI_PROGNAME)
+PRIORITY = $(CONFIG_MYAPPS_HI_PRIORITY)
+STACKSIZE = $(CONFIG_MYAPPS_HI_STACKSIZE)
+MODULE = $(CONFIG_MYAPPS_HI)
+
+ASRCS =
+CSRCS =
+MAINSRC = hi_main.c
+
+include $(APPDIR)/Application.mk

@@ -1,0 +1,4 @@
+
+ifeq ($(CONFIG_MYAPPS_HI),y)
+CONFIGURED_APPS += hi
+endif

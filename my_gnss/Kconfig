@@ -1,0 +1,25 @@
+
+config MYAPPS_MY_GNSS
+	tristate "MY GNSS"
+	default y
+	---help---
+		Enable the gnss_demo2 app
+
+if MYAPPS_MY_GNSS
+
+config MYAPPS_MY_GNSS_PROGNAME
+	string "Program name"
+	default "my_gnss"
+	---help---
+		This is the name of the program that will be use when the NSH ELF
+		program is installed.
+
+config MYAPPS_MY_GNSS_PRIORITY
+	int "my_gnss task priority"
+	default 100
+
+config MYAPPS_MY_GNSS_STACKSIZE
+	int "my_gnss stack size"
+	default 2048
+
+endif

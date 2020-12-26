@@ -1,0 +1,3 @@
+ifeq ($(CONFIG_MYAPPS_MY_GNSS),y)
+CONFIGURED_APPS += my_gnss
+endif

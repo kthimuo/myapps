@@ -1,0 +1,25 @@
+
+config MYAPPS_HI
+	tristate "Hi App"
+	default y
+	---help---
+		Enable the hi app
+
+if MYAPPS_HI
+
+config MYAPPS_HI_PROGNAME
+	string "Program name"
+	default "hi"
+	---help---
+		This is the name of the program that will be use when the NSH ELF
+		program is installed.
+
+config MYAPPS_HI_PRIORITY
+	int "hi task priority"
+	default 100
+
+config MYAPPS_HI_STACKSIZE
+	int "hi stack size"
+	default 2048
+
+endif
